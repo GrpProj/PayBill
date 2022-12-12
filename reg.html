@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form</title>--->
+    <link rel="stylesheet" href="reg.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+     <link rel="shorcut icon" type="image/png" href="favicon.png">
+   </head>
+<body>
+  <div class="container">
+    <div class="title"><img src="favicon55x55.png">Registration</div>
+    <div class="content">
+      <form action="index.html" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details"></span>
+            <input type="text" placeholder="Enter your first name" required>
+          </div>
+          <div class="input-box">
+            <span class="details"></span>
+            <input type="text" placeholder="Enter your last name" required>
+          </div>
+          <div class="input-box">
+            <span class="details"></span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details"></span>
+            <input type="text" placeholder="Enter your phone number" required>
+          </div>
+          <div class="input-box">
+            <span class="details"></span>
+            <input type="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details"></span>
+            <input type="password" placeholder="Confirm password" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <a href="home.html"><input type="submit" value="Register"></a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
