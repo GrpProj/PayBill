@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Checkout</title>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="checkout.css">
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/e95a5f72ef.js" crossorigin="anonymous"></script>
+    
+    <!-- favicon -->
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+
+    <div class="container">
+        
+        <form action="">
+            <div class="navigation">
+                <span class="card-link"><i class="fa-solid fa-credit-card card-icon" ></i> Credit/Debit Card</span>
+                <a href="upi.html" class="upi-link"><i class="fa-solid fa-mobile upi-icon"></i> UPI</a>
+                <a href="home.html" class="home-link"><i class="fa-solid fa-house home-icon"></i> Home</a>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Billing address</h3>          
+                    <div class="inputbox">
+                        <span>Full Name</span>
+                        <input type="text" placeholder="Jonathan Dabre">
+                    </div>
+                    <div class="inputbox">
+                        <span>Email</span>
+                        <input type="email" placeholder="example@xyz.com">
+                    </div>
+                    <div class="inputbox">
+                        <span>Address</span>
+                        <input type="text" placeholder="Home-street-locality">
+                    </div>
+                    <div class="inputbox">
+                        <span>City</span>
+                        <input type="text" placeholder="Mumbai">
+                    </div>
+                    <div class="flex">
+                        <div class="inputbox">
+                            <span>State</span>
+                            <!-- <input type="text" placeholder="Maharashtra"> -->
+                            <select name="state" id="state">
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujrat">Gujrat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerela">Kerela</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nada">Tamil Nada</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>        
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select>
+                              
+                        </div>
+                        <div class="inputbox">
+                            <span>Pincode</span>
+                            <input type="text" placeholder="XXXXXX">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <h3 class="title">Payment</h3>          
+                    
+                    <div class="inputbox">
+                        <span>Cards Accepted</span>
+                        <!-- <img src="images/card_img.png" alt=""> -->
+                        <img src="https://www.udemy.com/staticx/udemy/images/v9/card-visa.svg" alt="">
+                        <img src="https://www.udemy.com/staticx/udemy/images/v9/card-mastercard.svg" alt="">
+                        <img src="https://www.udemy.com/staticx/udemy/images/v9/card-rupay.svg" alt="">
+                        <img src="https://www.udemy.com/staticx/udemy/images/v9/card-discover.svg" alt="">
+                        <img src="https://www.udemy.com/staticx/udemy/images/v9/card-amex.svg" alt="">
+
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Name on card</span>
+                        <input type="text" placeholder="Jonathan Dabre">
+                    </div>
+                    <div class="inputbox">
+                        <span>Card number</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputbox">
+                        <span>Expiry Month</span>
+                        <input type="Number" placeholder="01" min="01" max="12">
+                    </div>
+                    <div class="flex">
+                        <div class="inputbox">
+                            <span>Expiry year</span>
+                            <input type="number" placeholder="23" min="22">                              
+                        </div>
+                        <div class="inputbox">
+                            <span>CVV</span>
+                            <input type="text" placeholder="XXX">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" value="Proceed To Pay" class="submit-btn">
+
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-transform: sentence;
+    transition: all .2s linear;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #57a8df, #9b59b6);
+    padding-bottom: 70pxs;
+}
+
+.navigation{
+    padding: 10px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #bbb;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.card-link{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.upi-link{
+
+    font-size: 1rem;
+    /* margin-left: 25px;         */
+}
+
+.upi-link:hover{
+    color:#8a36ab;
+    
+}
+
+.home-link{
+    font-size: 1rem;
+    /* margin-left: 25px; */
+}
+
+.home-link:hover{
+    color:#8a36ab;
+}
+
+.card-icon{
+    color:#8a36ab;
+    margin-right: 3px;
+}
+
+.upi-icon{
+    margin-right: 3px;
+}
+
+.home-icon{
+    margin-right: 3px;
+}
+
+.container form{
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 1); */
+}
+
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col{
+    flex: 1 1 250px;
+}
+
+.container form .row .col .title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container form .row .col .inputbox{
+    margin: 15px 0;
+}
+
+.container form .row .col .inputbox span{
+    margin-bottom: 10px;
+    display: block;
+    /* font-weight: bold; */
+}
+
+.container form .row .col .inputbox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputbox input:focus{
+    border: 1px solid #000;
+}
+
+.container form .row .col .flex{
+    display: flex;
+    gap: 15px;
+}
+
+/* Input box inside flex */
+.container form .row .col .flex .inputbox{
+    margin-top: 5px;
+}
+
+.container form .row .col .inputbox img{
+    height: 34px;
+    margin-top: 5px;
+    /* filter: drop-shadow(0 0 1px #000); */
+}
+
+.container form .submit-btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: linear-gradient(135deg, #57a8df, #9b59b6);
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container form .submit-btn:hover{
+    /* background: linear-gradient(135deg, #9b59b6, #57a8df);  */
+    background: linear-gradient(135deg, #7fb9df, #b37cc9);
+}
