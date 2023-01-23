@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="tab.css">
+	<title>Vertical Tabs</title>
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="wrapper">
+			<ul class="indicator">
+				<li class="active" data-target="#home">Home</li>
+				<li data-target="#kitchen">Kitchen</li>
+				<li data-target="#contact">Heating & Cooling</li>
+                <li data-target="#settings">Light</li>
+                <li data-target="#profile">PC</li>
+				<li data-target="#contact">Other</li>
+			</ul>
+			<ul class="content">
+				<li class="active" id="home">
+                <h1>Home</h1>
+					<div class="horizontal-group">
+                        <div class="select">
+                          <select name="format" id="days" onchange="unit()">
+                            <option value="Days" selected disabled>Days</option>
+                             <option value="1">1</option>
+                             <option value="2">2</option>
+                             <option value="3">3</option>
+                             <option value="4">4</option>
+                             <option value="5">5</option>
+                             <option value="6">6</option>
+                             <option value="7">7</option>
+                             <option value="8">8</option>
+                             <option value="9">9</option>
+                             <option value="10">10</option>
+                             <option value="11">11</option>
+                             <option value="12">12</option>
+                             <option value="13">13</option>
+                             <option value="14">14</option>
+                             <option value="15">15</option>
+                             <option value="16">16</option>
+                             <option value="17">17</option>
+                             <option value="18">18</option>
+                             <option value="19">19</option>
+                             <option value="20">20</option>
+                             <option value="21">21</option>
+                             <option value="22">22</option>
+                             <option value="23">23</option>
+                             <option value="24">24</option>
+                             <option value="25">25</option>
+                             <option value="26">26</option>
+                             <option value="27">27</option>
+                             <option value="28">28</option>
+                             <option value="29">29</option>
+                             <option value="30">30</option>
+                             <option value="31">31</option>
+                          </select>
+                       </div>
+                      </div>
+                    <div class="container">
+                        
+                        <label>Volts:</label>
+                        <input type="text" id="volt" oninput="calculate()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp" oninput="calculate()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity" oninput="calculate()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage" oninput="calculate()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units" oninput="calculate1()" disabled placeholder="0">
+                    </div>
+                    
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt2" oninput="calculate2()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp2" oninput="calculate2()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity2" oninput="calculate2()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage2" oninput="calculate2()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts2" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units2" oninput="calculate2()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt3" oninput="calculate3()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp3" oninput="calculate3()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity3" oninput="calculate3()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage3" oninput="calculate3()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts3" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units3" oninput="calculate3()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt4" oninput="calculate4()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp4" oninput="calculate4()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity4" oninput="calculate4()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage4" oninput="calculate4()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts4" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units4" oninput="calculate4()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt5" oninput="calculate5()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp5" oninput="calculate5()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity5" oninput="calculate5()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage5" oninput="calculate5()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts5" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units5" oninput="calculate5()" disabled placeholder="0">
+                    </div>
+                    
+                    <div class="container">
+                        <label>Total:</label>
+                        <input type="number" id="total" disabled >
+                    </div>
+				</li>
+				<li id="profile">
+                    <h1>Kitchen</h1>
+                    <div class="horizontal-group">
+                        <div class="select">
+                            <select name="format" id="days" onchange="unit()">
+                              <option value="Days" selected disabled>Days</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                               <option value="11">11</option>
+                               <option value="12">12</option>
+                               <option value="13">13</option>
+                               <option value="14">14</option>
+                               <option value="15">15</option>
+                               <option value="16">16</option>
+                               <option value="17">17</option>
+                               <option value="18">18</option>
+                               <option value="19">19</option>
+                               <option value="20">20</option>
+                               <option value="21">21</option>
+                               <option value="22">22</option>
+                               <option value="23">23</option>
+                               <option value="24">24</option>
+                               <option value="25">25</option>
+                               <option value="26">26</option>
+                               <option value="27">27</option>
+                               <option value="28">28</option>
+                               <option value="29">29</option>
+                               <option value="30">30</option>
+                               <option value="31">31</option>
+                            </select>
+                         </div>
+                      </div>
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt" oninput="tab.js/calculate()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp" oninput="tab.js/calculate()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity" oninput="tab.js/calculate()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage" oninput="tab.js/calculate()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units" oninput="tab.js/calculate1()" disabled placeholder="0">
+                    </div>
+                    
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt2" oninput="calculate2()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp2" oninput="calculate2()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity2" oninput="calculate2()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage2" oninput="calculate2()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts2" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units2" oninput="calculate2()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt3" oninput="calculate3()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp3" oninput="calculate3()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity3" oninput="calculate3()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage3" oninput="calculate3()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts3" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units3" oninput="calculate3()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt4" oninput="tab.js/calculate4()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp4" oninput="tab.js/calculate4()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity4" oninput="tab.js/calculate4()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage4" oninput="tab.js/calculate4()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts4" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units4" oninput="tab.js/calculate4()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt5" oninput="tab.js/calculate5()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp5" oninput="tab.js/calculate5()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity5" oninput="tab.js/calculate5()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage5" oninput="tab.js/calculate5()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts5" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units5" oninput="tab.js/calculate5()" disabled placeholder="0">
+                    </div>
+                    
+                    <div class="container">
+                        <label>Total:</label>
+                        <input type="number" id="total" disabled >
+                    </div>
+				</li>
+				<li id="kitchen">
+					<div class="horizontal-group">
+                        <div class="select">
+                            <select name="format" id="days" onchange="unit()">
+                              <option value="Days" selected disabled>Days</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                               <option value="11">11</option>
+                               <option value="12">12</option>
+                               <option value="13">13</option>
+                               <option value="14">14</option>
+                               <option value="15">15</option>
+                               <option value="16">16</option>
+                               <option value="17">17</option>
+                               <option value="18">18</option>
+                               <option value="19">19</option>
+                               <option value="20">20</option>
+                               <option value="21">21</option>
+                               <option value="22">22</option>
+                               <option value="23">23</option>
+                               <option value="24">24</option>
+                               <option value="25">25</option>
+                               <option value="26">26</option>
+                               <option value="27">27</option>
+                               <option value="28">28</option>
+                               <option value="29">29</option>
+                               <option value="30">30</option>
+                               <option value="31">31</option>
+                            </select>
+                         </div>
+                      </div>
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt" oninput="tab.js/calculate()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp" oninput="tab.js/calculate()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity" oninput="tab.js/calculate()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage" oninput="tab.js/calculate()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units" oninput="tab.js/calculate1()" disabled placeholder="0">
+                    </div>
+                    
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt2" oninput="calculate2()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp2" oninput="calculate2()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity2" oninput="calculate2()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage2" oninput="calculate2()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts2" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units2" oninput="calculate2()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt3" oninput="calculate3()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp3" oninput="calculate3()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity3" oninput="calculate3()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage3" oninput="calculate3()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts3" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units3" oninput="calculate3()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt4" oninput="calculate4()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp4" oninput="calculate4()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity4" oninput="calculate4()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage4" oninput="calculate4()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts4" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units4" oninput="calculate4()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt5" oninput="calculate5()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp5" oninput="calculate5()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity5" oninput="calculate5()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage5" oninput="calculate5()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts5" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units5" oninput="calculate5()" disabled placeholder="0">
+                    </div>
+                    
+                    <div class="container">
+                        <label>Total:</label>
+                        <input type="number" id="total" disabled >
+                    </div>
+				</li>
+				<li id="settings">
+					<div class="horizontal-group">
+                        <div class="select">
+                            <select name="format" id="days" onchange="unit()">
+                              <option value="Days" selected disabled>Days</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                               <option value="11">11</option>
+                               <option value="12">12</option>
+                               <option value="13">13</option>
+                               <option value="14">14</option>
+                               <option value="15">15</option>
+                               <option value="16">16</option>
+                               <option value="17">17</option>
+                               <option value="18">18</option>
+                               <option value="19">19</option>
+                               <option value="20">20</option>
+                               <option value="21">21</option>
+                               <option value="22">22</option>
+                               <option value="23">23</option>
+                               <option value="24">24</option>
+                               <option value="25">25</option>
+                               <option value="26">26</option>
+                               <option value="27">27</option>
+                               <option value="28">28</option>
+                               <option value="29">29</option>
+                               <option value="30">30</option>
+                               <option value="31">31</option>
+                            </select>
+                         </div>
+                      </div>
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt" oninput="calculate()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp" oninput="calculate()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity" oninput="calculate()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage" oninput="calculate()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units" oninput="calculate1()" disabled placeholder="0">
+                    </div>
+                    
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt2" oninput="calculate2()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp2" oninput="calculate2()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity2" oninput="calculate2()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage2" oninput="calculate2()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts2" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units2" oninput="calculate2()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt3" oninput="calculate3()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp3" oninput="calculate3()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity3" oninput="calculate3()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage3" oninput="calculate3()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts3" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units3" oninput="calculate3()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt4" oninput="calculate4()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp4" oninput="calculate4()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity4" oninput="calculate4()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage4" oninput="calculate4()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts4" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units4" oninput="calculate4()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt5" oninput="calculate5()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp5" oninput="calculate5()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity5" oninput="calculate5()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage5" oninput="calculate5()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts5" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units5" oninput="calculate5()" disabled placeholder="0">
+                    </div>
+                    
+                    <div class="container">
+                        <label>Total:</label>
+                        <input type="number" id="total" disabled >
+                    </div>
+				</li>
+                <li id="settings">
+					<div class="horizontal-group">
+                        <div class="select">
+                            <select name="format" id="days" onchange="unit()">
+                              <option value="Days" selected disabled>Days</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                               <option value="11">11</option>
+                               <option value="12">12</option>
+                               <option value="13">13</option>
+                               <option value="14">14</option>
+                               <option value="15">15</option>
+                               <option value="16">16</option>
+                               <option value="17">17</option>
+                               <option value="18">18</option>
+                               <option value="19">19</option>
+                               <option value="20">20</option>
+                               <option value="21">21</option>
+                               <option value="22">22</option>
+                               <option value="23">23</option>
+                               <option value="24">24</option>
+                               <option value="25">25</option>
+                               <option value="26">26</option>
+                               <option value="27">27</option>
+                               <option value="28">28</option>
+                               <option value="29">29</option>
+                               <option value="30">30</option>
+                               <option value="31">31</option>
+                            </select>
+                         </div>
+                      </div>
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt" oninput="calculate()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp" oninput="calculate()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity" oninput="calculate()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage" oninput="calculate()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units" oninput="calculate1()" disabled placeholder="0">
+                    </div>
+                    
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt2" oninput="calculate2()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp2" oninput="calculate2()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity2" oninput="calculate2()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage2" oninput="calculate2()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts2" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units2" oninput="calculate2()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt3" oninput="calculate3()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp3" oninput="calculate3()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity3" oninput="calculate3()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage3" oninput="calculate3()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts3" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units3" oninput="calculate3()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt4" oninput="calculate4()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp4" oninput="calculate4()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity4" oninput="calculate4()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage4" oninput="calculate4()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts4" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units4" oninput="calculate4()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt5" oninput="calculate5()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp5" oninput="calculate5()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity5" oninput="calculate5()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage5" oninput="calculate5()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts5" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units5" oninput="calculate5()" disabled placeholder="0">
+                    </div>
+                    
+                    <div class="container">
+                        <label>Total:</label>
+                        <input type="number" id="total" disabled >
+                    </div>
+				</li>
+                <li id="contact">
+                    <div class="horizontal-group">
+                        <div class="select">
+                            <select name="format" id="days" onchange="unit()">
+                              <option value="Days" selected disabled>Days</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10">10</option>
+                               <option value="11">11</option>
+                               <option value="12">12</option>
+                               <option value="13">13</option>
+                               <option value="14">14</option>
+                               <option value="15">15</option>
+                               <option value="16">16</option>
+                               <option value="17">17</option>
+                               <option value="18">18</option>
+                               <option value="19">19</option>
+                               <option value="20">20</option>
+                               <option value="21">21</option>
+                               <option value="22">22</option>
+                               <option value="23">23</option>
+                               <option value="24">24</option>
+                               <option value="25">25</option>
+                               <option value="26">26</option>
+                               <option value="27">27</option>
+                               <option value="28">28</option>
+                               <option value="29">29</option>
+                               <option value="30">30</option>
+                               <option value="31">31</option>
+                            </select>
+                         </div>
+                      </div>
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt" oninput="calculate()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp" oninput="calculate()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity" oninput="calculate()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage" oninput="calculate()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units" oninput="calculate1()" disabled placeholder="0">
+                    </div>
+                    
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt2" oninput="calculate2()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp2" oninput="calculate2()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity2" oninput="calculate2()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage2" oninput="calculate2()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts2" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units2" oninput="calculate2()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt3" oninput="calculate3()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp3" oninput="calculate3()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity3" oninput="calculate3()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage3" oninput="calculate3()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts3" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units3" oninput="calculate3()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt4" oninput="calculate4()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp4" oninput="calculate4()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity4" oninput="calculate4()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage4" oninput="calculate4()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts4" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units4" oninput="calculate4()" disabled placeholder="0">
+                    </div>
+            
+                    <div class="container">
+                        <label>Volts:</label>
+                        <input type="text" id="volt5" oninput="calculate5()" placeholder="0">
+                        <label>Amps:</label>
+                        <input type="text" id="amp5" oninput="calculate5()" placeholder="0">
+                        <label>Quantity:</label>
+                        <input type="text" id="quantity5" oninput="calculate5()" placeholder="0">
+                        <label>Usage(in hrs):</label>
+                        <input type="text" id="usage5" oninput="calculate5()" placeholder="0">
+                        <label>Watts:</label>
+                        <input type="text" id="watts5" disabled placeholder="0">
+                        <label>Units:</label>
+                        <input type="text" id="units5" oninput="calculate5()" disabled placeholder="0">
+                    </div>
+                    
+                    <div class="container">
+                        <label>Total:</label>
+                        <input type="number" id="total" disabled >
+                    </div>
+                </li>
+			</ul>
+		</div>
+	</div>
+	<script src="tab.js"></script>
+</body>
+</html>
+
+<!--
+<i class="ph-house"></i>
+<i class="fa-regular fa-washing-machine"></i>
+<i class="bi bi-fan"></i>
+<i class="bi bi-lightbulb"></i>
+<i class="ph-desktop-tower"></i>
+<i class="bi bi-ev-front"></i>
+-->
