@@ -5,19 +5,21 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
-body{
-  height: 180vh;
-  display: flex;
+body
+{
+  height: 100%;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   background: linear-gradient(120deg,#2980b9, #8e44ad);
 }
-.container{
+.container
+{
+  margin:15px 10px;
   max-width: 950px;
-  width: 100%;
+  width: 90%;
+  height: 100%;
   background-color: #fff;
-  padding: 20px 35px;
+  padding: 20px 30px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
@@ -27,24 +29,22 @@ body{
   position: relative;
 }
 .container .title::before{
-  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  /*background: linear-gradient(135deg, #71b7e6, #9b59b6);*/
 }
 .content form .user-details{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0 12px 0;
+  margin: 10px 0 10px 0;
 }
 form .user-details .input-box{
-  margin-bottom: 15px;
-  width: calc(100% / 2 - 20px);
+  margin-bottom: 5px;
+  width: calc(100% / 2 - 30px);
 }
 form .input-box span.details{
   display: block;
@@ -73,7 +73,7 @@ form .input-box span.details{
  form .category{
    display: flex;
    width: 80%;
-   margin: 14px 0 ;
+   margin: 10px 0 ;
    justify-content: space-between;
  }
  form .category label{
@@ -82,8 +82,8 @@ form .input-box span.details{
    cursor: pointer;
  }
  form .category label .dot{
-  height: 18px;
-  width: 18px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
   margin-right: 10px;
   background: #d9d9d9;
@@ -117,33 +117,8 @@ form .input-box span.details{
    background: linear-gradient(135deg, #71b7e6, #9b59b6);
  }
  form .button input:hover{
-  /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
   }
- @media(max-width: 884px){
- .container{
-  max-width: 100%;
-}
-form .user-details .input-box{
-    margin-bottom: 15px;
-    width: 100%;
-  }
-  form .category{
-    width: 100%;
-  }
-  .content form .user-details{
-    max-height: 500px;
-    overflow-y: scroll;
-  }
-  .user-details::-webkit-scrollbar{
-    width: 5px;
-  }
-  }
-  @media(max-width: 559px){
-  .container .content .category{
-    flex-direction: column;
-  }
-}
 
 img
 {
@@ -311,38 +286,38 @@ input[type=range]:focus::-ms-fill-upper {
   margin-top: 10px;
   margin-right: 10px;
 }
-
-select {
-   -webkit-appearance:none;
-   -moz-appearance:none;
-   -ms-appearance:none;
-   appearance:none;
-   outline:0;
-   box-shadow:none;
-   /*border:0!important;*/
-   border-color: #8e44ad;
-   background: #fff;
-   background-image: none;
-   flex: 1;
-   padding: 0 .8em;
-   color:#000101;
-   cursor:pointer;
-   font-size: 1em;
+.slider
+{
+  margin-bottom: 15px;
 }
 
+select 
+{
+  border-color: #8e44ad;
+  background: #fff;
+  background-image: none;
+  flex: 1;
+  padding: 0.8em;
+  color:#000101;
+  cursor:pointer;
+  font-size: 1.5em;
+  text-align: center;
+}
 
 select::-ms-expand {
    display: none;
 }
-.select {
+.select 
+{
    position: relative;
    display: flex;
-   width: 20em;
+   width: 100%;
    height: 3em;
    line-height: 3;
    background: #fff;
    overflow: hidden;
    border-radius: .30em;
+   margin: 15px 0px 25px;
 }
 .select::after {
    content: '\25BC';
@@ -359,3 +334,47 @@ select::-ms-expand {
 .select:hover::after {
    color: #2980b9;
 }
+
+@media (min-width: 400px) {
+  .container{
+    height: 100%;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .container{
+    height: 60%;
+  }
+}
+
+@media(max-width: 884px){
+  .container{
+   max-width: 90%;
+   height: 100%;
+   }
+    form .user-details .input-box{
+     margin-bottom: 5px;
+     margin-top: 5px;
+     width: 100%;
+   }
+    form .category{
+     width: 100%;
+   }
+    .content form .user-details{
+     max-height: 500px;
+     overflow-y: scroll;
+   }
+    .user-details::-webkit-scrollbar{
+     width: 5px;
+   }
+ }
+ @media(max-width: 559px){
+    .container .content .category{
+     flex-direction: column;
+   }
+    #range-label{
+     text-align: center;
+   }
+ }
+ 
