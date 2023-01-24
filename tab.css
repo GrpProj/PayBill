@@ -24,10 +24,10 @@ body {
 
 .container-fluid {
 	width: 90%;
-  height: 70%;
+  height: 65%;
 	background: var(--white);
 	border-radius: 10px;
-  margin: 5px 5px;
+  margin: 2px 5px;
 }
 .wrapper {
 	display: flex;
@@ -95,7 +95,7 @@ select[id^='days']
   {
      position: relative;
      display: flex;
-     width: 10%;
+     width: 15%;
      height: 2em;
      line-height: 2;
      background: #fff;
@@ -136,7 +136,7 @@ input:hover{
 
 input[id^='total']
 {
-  padding: 0 5px;
+  padding: 0 15px;
   width: 60px;
 }
 
@@ -153,7 +153,7 @@ input[id^='total']
 	.wrapper {
 		flex-direction: column;
 	}
-	.indicator {
+	.indicator li {
 		border-right: none;
     text-align: center;
 	}
@@ -166,7 +166,10 @@ input[id^='total']
 
   .container{
     overflow-wrap: break-word;
-    height: 60%;  
+    height: 60%;
+    width: 100%;
+    padding: 2px;
+    margin: 5px 2px;  
   }
 
   select[id^='days'] 
@@ -181,34 +184,39 @@ input[id^='total']
   input{
     width: 35px;
     height: 25px;
-    margin: 1px;
-    padding: 0 5px;
+    margin: 2px 1px;
+    padding: 0 2px;
+    font-size: 0.8rem;
   }
   input[id^='total']
   {
     padding: 0 3px;
-    width: 45px;
+    width: 50px;
   }
 
   .indicator {
-    padding: 5px 0;
+    padding: 3px 0;
   }
   .indicator li {
     display: flex;
     align-items: center;
     text-align: center;
-    grid-gap: .2rem;
-    padding: 5px 1rem;
+    grid-gap: .1rem;
+    padding: 5px 5rem;
     
   }
   .indicator li i {
-    font-size: .5rem;
+    font-size: 1rem;
     text-align: center;
   }
   .content{
-    margin-top: 0px;
-    width: 90%;;
+    width: 95%;;
     height: 100%;
+    padding: .2rem .3rem;
+    margin: 0;
+  }
+  h1{
+    text-align: center;
   }
   
 }
