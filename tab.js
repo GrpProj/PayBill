@@ -452,3 +452,218 @@ function unithc() {
 }
 
 
+//PC
+
+function pc() {
+  // Get the input values
+  var num1 = $('#volt-pc').val();
+  var num2 = $('#amp-pc').val();
+  var num3 = $('#quantity-pc').val();
+  var num4 = $('#usage-pc').val();
+
+  // Convert the input string to numbers and multiply them
+  var result1 = mul(num1,num2);
+  var result2 = (parseFloat(result1)/1000) * mul(num3,num4);
+
+  // Display the result in the result input box
+  $('#watts-pc').val(result1);
+  $('#units-pc').val(result2);
+  unitpc();
+}
+
+function pc2() {
+  // Get the input values
+  var num1 = $('#volt-pc-2').val();
+  var num2 = $('#amp-pc-2').val();
+  var num3 = $('#quantity-pc-2').val();
+  var num4 = $('#usage-pc-2').val();
+
+  // Convert the input string to numbers and multiply them
+  var result3 = mul(num1,num2);
+  var result4 = (parseFloat(result3)/1000) * mul(num3,num4);
+
+  // Display the result in the result input box
+  $('#watts-pc-2').val(result3);
+  $('#units-pc-2').val(result4);
+  unitpc();
+}
+
+function pc3() {
+  // Get the input values
+  var num1 = $('#volt-pc-3').val();
+  var num2 = $('#amp-pc-3').val();
+  var num3 = $('#quantity-pc-3').val();
+  var num4 = $('#usage-pc-3').val();
+
+  // Convert the input string to numbers and multiply them
+  var result3 = mul(num1,num2);
+  var result4 = (parseFloat(result3)/1000) * mul(num3,num4);
+
+  // Display the result in the result input box
+  $('#watts-pc-3').val(result3);
+  $('#units-pc-3').val(result4);
+  unitpc();
+}
+
+function pc4() {
+  // Get the input values
+  var num1 = $('#volt-pc-4').val();
+  var num2 = $('#amp-pc-4').val();
+  var num3 = $('#quantity-pc-4').val();
+  var num4 = $('#usage-pc-4').val();
+
+  // Convert the input string to numbers and multiply them
+  var result3 = mul(num1,num2);
+  var result4 = (parseFloat(result3)/1000) * mul(num3,num4);
+
+  // Display the result in the result input box
+  $('#watts-pc-4').val(result3);
+  $('#units-pc-4').val(result4);
+  unitpc();
+}
+
+function pc5() {
+  // Get the input values
+  var num1 = $('#volt-pc-5').val();
+  var num2 = $('#amp-pc-5').val();
+  var num3 = $('#quantity-pc-5').val();
+  var num4 = $('#usage-pc-5').val();
+
+  // Convert the input string to numbers and multiply them
+  var result3 = mul(num1,num2);
+  var result4 = (parseFloat(result3)/1000) * mul(num3,num4);
+
+  // Display the result in the result input box
+  $('#watts-pc-5').val(result3);
+  $('#units-pc-5').val(result4);
+  unitpc();
+}
+
+function unitpc() {
+   
+  var num5 = Number($('#units-pc').val());
+  var num6 = Number($('#units-pc-2').val());
+  var num7 = Number($('#units-pc-3').val());
+  var num8 = Number($('#units-pc-4').val());
+  var num9 = Number($('#units-pc-5').val());
+
+  var day = $('#days-pc').val();
+  if (day === "Days") {
+    day = 1;
+  }
+  day = Number(day);
+  var Total = (parseFloat(num5) + parseFloat(num6) + parseFloat(num7) +  parseFloat(num8) +  parseFloat(num9)) * parseFloat(day) ;
+
+  Total = parseFloat(Total).toFixed(4);
+  // Display the result in the result input box
+  $('#total-pc').val(Total);
+}
+
+
+//Other
+
+function other() {
+  // Get the input values
+  var num1 = $('#volt-other').val();
+  var num2 = $('#amp-other').val();
+  var num3 = $('#quantity-other').val();
+  var num4 = $('#usage-other').val();
+
+  // Convert the input string to numbers and multiply them
+  var result1 = mul(num1,num2);
+  var result2 = (parseFloat(result1)/1000) * mul(num3,num4);
+
+  // Display the result in the result input box
+  $('#watts-other').val(result1);
+  $('#units-other').val(result2);
+  unitother();
+}
+
+function other2() {
+  // Get the input values
+  var num1 = $('#volt-other-2').val();
+  var num2 = $('#amp-other-2').val();
+  var num3 = $('#quantity-other-2').val();
+  var num4 = $('#usage-other-2').val();
+
+  // Convert the input string to numbers and multiply them
+  var result3 = mul(num1,num2);
+  var result4 = (parseFloat(result3)/1000) * mul(num3,num4);
+
+  // Display the result in the result input box
+  $('#watts-other-2').val(result3);
+  $('#units-other-2').val(result4);
+  unitother();
+}
+
+function other3() {
+  // Get the input values
+  var num1 = $('#volt-other-3').val();
+  var num2 = $('#amp-other-3').val();
+  var num3 = $('#quantity-other-3').val();
+  var num4 = $('#usage-other-3').val();
+
+  // Convert the input string to numbers and multiply them
+  var result3 = mul(num1,num2);
+  var result4 = (parseFloat(result3)/1000) * mul(num3,num4);
+
+  // Display the result in the result input box
+  $('#watts-other-3').val(result3);
+  $('#units-other-3').val(result4);
+  unitother();
+}
+
+function other4() {
+  // Get the input values
+  var num1 = $('#volt-other-4').val();
+  var num2 = $('#amp-other-4').val();
+  var num3 = $('#quantity-other-4').val();
+  var num4 = $('#usage-other-4').val();
+
+  // Convert the input string to numbers and multiply them
+  var result3 = mul(num1,num2);
+  var result4 = (parseFloat(result3)/1000) * mul(num3,num4);
+
+  // Display the result in the result input box
+  $('#watts-other-4').val(result3);
+  $('#units-other-4').val(result4);
+  unitother();
+}
+
+function other5() {
+  // Get the input values
+  var num1 = $('#volt-other-5').val();
+  var num2 = $('#amp-other-5').val();
+  var num3 = $('#quantity-other-5').val();
+  var num4 = $('#usage-other-5').val();
+
+  // Convert the input string to numbers and multiply them
+  var result3 = mul(num1,num2);
+  var result4 = (parseFloat(result3)/1000) * mul(num3,num4);
+
+  // Display the result in the result input box
+  $('#watts-other-5').val(result3);
+  $('#units-other-5').val(result4);
+  unitother();
+}
+
+function unitother() {
+   
+  var num5 = Number($('#units-other').val());
+  var num6 = Number($('#units-other-2').val());
+  var num7 = Number($('#units-other-3').val());
+  var num8 = Number($('#units-other-4').val());
+  var num9 = Number($('#units-other-5').val());
+
+  var day = $('#days-other').val();
+  if (day === "Days") {
+    day = 1;
+  }
+  day = Number(day);
+  var Total = (parseFloat(num5) + parseFloat(num6) + parseFloat(num7) +  parseFloat(num8) +  parseFloat(num9)) * parseFloat(day) ;
+
+  Total = parseFloat(Total).toFixed(4);
+  // Display the result in the result input box
+  $('#total-other').val(Total);
+}
+
