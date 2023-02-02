@@ -1,0 +1,225 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  height: 100vh;
+  background: linear-gradient(120deg, #2980b9, #8e44ad);
+  display: flex;
+  align-items: center;
+  font-family: "Ubuntu" ;
+}
+.container
+{
+  margin-top: 5px;
+  margin-left: 5%;
+  width: 90%;
+  height: 70%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 95%;
+  width: 2px;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #a8a8c5;
+}
+.content .left-side .details{
+  margin: 5px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #8e44ad;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 15px;
+  color: #afafb6;
+}
+
+
+.container .content .right-side{
+  width: 70%;
+  margin-left: 40px;
+}
+.content .right-side .topic{
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+}
+
+.topic-text
+{
+  margin-top: 5px;
+  color: #85859b;
+  font-size: 18px;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 10px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 100%;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 10px;
+}
+.right-side .button input[type="submit"]{
+
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background: linear-gradient(120deg, #2980b9, #8e44ad);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="submit"]:hover{
+  background: linear-gradient(-120deg, #2980b9, #8e44ad);
+}
+
+#mybtn
+{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background: linear-gradient(120deg, #2980b9, #8e44ad);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 80%;
+  margin-top: 20px;
+}
+
+@media (max-width: 990px) {
+  .container{
+    margin: auto;
+    width: 80%;
+    height: 65%;
+    padding: 15px 15px;
+  }
+  .container .content .right-side{
+   width: 65%;
+   margin-left: 55px;
+  }
+  #mybtn{
+    margin-top: 20px;
+    margin-left: 70%;
+    width: 20%;
+    padding: 5px 5px;
+   }
+    .right-side .input-box input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-left: 5%;
+  }
+    .topic-text{
+      text-align: center;
+    }
+}
+@media (max-width: 676px) {
+
+  .container{
+    margin: auto;
+    height: 80%;
+    width: 95%;
+    align-items: center;
+    overflow-y: scroll;
+  }
+  .container::-webkit-scrollbar{
+    width: 2px;
+  }
+  .container .content{
+    margin: auto;
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+ #mybtn{
+  margin-top: 20px;
+  margin-left: 55%;
+  width: 40%;
+  padding: 5px 5px;
+ }
+  .right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 90%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  margin-left: 5%;
+}
+  .topic-text{
+    text-align: center;
+  }
+}
