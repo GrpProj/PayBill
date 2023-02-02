@@ -4,6 +4,7 @@ body
   padding: 0;
   display: flexbox;
   width: 100%;
+  font-family: "Ubuntu";
 }
 
 .navbar
