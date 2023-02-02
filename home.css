@@ -3,11 +3,13 @@ body
 	margin: 0;
   padding: 0;
   display: flexbox;
+  width: 100%;
 }
 
 .navbar
 {
   padding: 0 0 3.5rem;
+  
 }
 .navbar-brand
 {
@@ -25,8 +27,13 @@ body
 
 .nav-link
 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Montserrat-light";
+}
+
+#news
+{
+  width: 100%;
 }
 
 .slide-text
@@ -42,7 +49,7 @@ body
 }
 
 .services .icon-box {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 30px;
   border-radius: 6px;
 }
@@ -61,7 +68,7 @@ body
 }
 
 .services .icon-box h4 a {
-  color: #556270;
+  color: #9b59b6;
   transition: 0.3s;
 }
 
@@ -72,7 +79,7 @@ body
 }
 
 .services .icon-box:hover h4 a {
-  color: #9b59b6;
+  color: #7c3897;
 }
 .site-footer
 {
@@ -90,8 +97,8 @@ body
 
 .site-footer hr
 {
-  border-top-color:#bbb;
-  opacity:0.5
+  border-top-color:rgb(254, 252, 252);
+  opacity:0.5;
 }
 .site-footer hr.small
 {
@@ -154,24 +161,7 @@ body
 {
   margin:0
 }
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
+
 .social-icons
 {
   padding-left:0;
@@ -218,21 +208,176 @@ body
   width:34px;
   font-size:14px
 }
-.social-icons a.facebook:hover
+
+.About-text
 {
-  background-color:#3b5998
+  margin-right: 35px;
 }
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
+
+.faq-heading{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  font-weight: bold;
 }
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
+
+#faq{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding: 10px;
 }
-.social-icons a.dribbble:hover
+.container-faq{
+  width: 100%;
+  /* min-width: 500px; */
+  /* position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%; */
+  border-radius: 5px;
+  
+}
+
+.wrapper{
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  /* box-shadow: 0 15px 25px rgba(0,0,50,0.2); */
+}
+.wrapper:hover{
+  background-color: #f6f6f6;
+}
+.toggle,
+.content{
+  position: relative;
+  font-size: 16px;
+  font-family: "Ubuntu";
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+.toggle{
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  /* color: #111130; */
+  color: #333;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.faq-div{
+  padding:0 0 50px 25px;
+  margin-top: 0;
+}
+.link-faq{
+  font-size: 20px;
+  font-family: "Ubuntu";
+  color:#333;
+  
+}
+
+.link-faq:hover{
+  text-decoration: none;
+  color: #8e44ad;
+}
+
+.paybill-heading{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.paybill-para{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 15px;
+  padding-bottom: 45px;
+  font-size: 16px;
+  font-family: "Ubuntu";
+  color: #333;
+}
+
+@media (max-width:991px)
 {
-  background-color:#ea4c89
+  
+  .slide-text
+  {
+    font-size: 30px;
+  }
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px;
+    text-align: center;
+  }
+
+  .services .icon-box {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+  .About-text
+  {
+    text-align: center;
+  }
+  
+}
+@media (max-width:767px)
+{ 
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+  .About-text
+  {
+    margin: 0 5% 0 5% ;
+    text-align: center;
+  }
+  services .icon-box {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  /* #faq{
+    align-items: center;
+    justify-content: center;
+    margin: 0 5% 0 5%;
+  } */
+  .container-faq{
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 90vw; 
+    
+  }
+  .wrapper{
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 90vw;
+  }
+
 }
 @media (max-width:767px)
 {
@@ -241,6 +386,16 @@ body
     display:block;
     margin-right:0;
     font-weight:600
+  }
+  .About-text
+  {
+    margin: 0 5% 0 5%;
+    text-align: center;
+  }
+  services .icon-box {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 3px;
   }
 }
 
