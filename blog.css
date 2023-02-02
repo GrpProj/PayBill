@@ -18,6 +18,30 @@ body{
     padding: 0px;
     font-family: poppins;
 }
+.navbar
+{
+  padding: 0 0 3.5rem;
+  
+}
+.navbar-brand
+{
+  font-family: "Ubuntu";
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.nav-item
+{
+  padding: 0 5px;
+  color: #000;
+  margin-right: 3px;
+}
+
+.nav-link
+{
+  font-size: 2.5;
+  font-family: "Ubuntu";
+}
 
 
 /* ----------blog--------------- */
