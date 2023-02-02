@@ -119,7 +119,7 @@ body
 }
 .site-footer a:hover
 {
-  color:#eaea3d;
+  color:#ffffff;
   text-decoration:none;
 }
 .footer-links
@@ -137,7 +137,7 @@ body
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:#eaea3d;
+  color:#e3e3e3;
   text-decoration:none;
 }
 .footer-links.inline li
