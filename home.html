@@ -4,13 +4,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
 	      <link rel="icon" href="favicon.png">
+        <!-- icon -->
+        <script src="https://kit.fontawesome.com/e95a5f72ef.js" crossorigin="anonymous"></script>
     <link rel= "stylesheet" href="home.css" >
         <title>Home Page</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-	</head>
+        
+    </head>
 	<body>
 		<nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -29,7 +32,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Current Bill</a></li>
-                <li><a class="dropdown-item" href="#">Quick Bill Payments</a></li>
+                <li><a class="dropdown-item" href="checkout.html">Quick Bill Payments</a></li>
                 <li><a class="dropdown-item" href="#">Bill Over SMS</a></li>
                 <li><a class="dropdown-item" href="#">Payment History</a></li>
                 <li><a class="dropdown-item" href="#">Download Bill</a></li>
@@ -45,11 +48,11 @@
                 Help & Support
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Complaints</a></li>
+                <li><a class="dropdown-item" href="complaint.html">Complaints</a></li>
                 <li><a class="dropdown-item" href="#">Report Electricity Theft</a></li>
-                <li><a class="dropdown-item" href="#">Virtual Contact Centre</a></li>
+                <li><a class="dropdown-item" href="vcc.html">Virtual Contact Centre</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -63,7 +66,7 @@
       </div>
     </nav>
 
-<section>
+<section id="news">
   <div class="container-fluid">
 <div id="robotcarousel" class="carousel slide" data-bs-ride="carousel" data-interval="800" data-pause="hover">
   
@@ -166,58 +169,129 @@
   </div>
 </section><!-- End Services Section -->
 
+<!-- FAQ section-->
+<h2 class="faq-heading">Frequently Asked Questions</h2>
+<section id="faq">
+  
+  <div class="container-faq">
+    <div class="wrapper">
+      <button class="toggle">
+          What is the return policy?
+          <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
+      </div>     
+  </div>
+  <div class="wrapper">
+      <button class="toggle">
+          How do I apply the coupon?
+          <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores error doloremque, quibusdam qui necessitatibus autem aperiam reprehenderit? Ipsum maiores dolore inventore ea. Accusantium fuga eius laboriosam iusto blanditiis doloremque ullam?</p>
+      </div>  
+  </div>
+  
+  <div class="wrapper">
+      <button class="toggle">
+          How do I become a member?
+          <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
+      </div>    
+  </div>
+  <div class="wrapper">
+      <button class="toggle">
+          How do I become a member?
+          <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
+      </div>    
+  </div>
+  </div>
+
+ 
+
+</section>
+<div class="faq-div">
+  <a href="faq.html" class="link-faq">See all</a>
+
+</div>
+
+
+<!-- End of FAQ section-->
+
+<!-- PayBill-electricity billing system section-->
+  <section class="paybill-details">
+    <h2 class="paybill-heading">
+      PayBill- Electricity Billing System
+    </h2>
+    <p class="paybill-para">
+      Welcome to Paybill Electricity Billing System <br><br>
+      By students at FRCRCE - The major motivation for choosing this topic is to learn the nuances of how bill payment works and the problems related to it. Our goal is Designing and implementing an online Electricity Bill Payment System and fixing the issues related to it.
+    </p>
+  </section>
+
+<!-- End of paybill details section -->
+
+
   <!-- Site footer -->
  <div class="bg-gradiant">
-  <footer class="site-footer">
-   <div class="container">
-     <div class="row">
-       <div class="col-sm-12 col-md-6">
-         <h6>About</h6>
-         <p class="text-justify">By students at FRCRCE - <i>The major motivation for choosing this topic is to learn the nuances of how bill payment works and the problems related to it.</i> Our goal is Designing and implementing an online Electricity Bill Payment System and fixing the issues related to it.</p>
-       </div>
- 
-       <div class="col-xs-6 col-md-3">
-         <h6>Services</h6>
-         <ul class="footer-links">
-           <li><a href="New-Connection.html">Apply New Connection</a></li>
-           <li><a href="New-Connection.html">Pay Bills</a></li>
-           <li><a href="New-Connection.html">Submit Meter Reading</a></li>
-           <li><a href="New-Connection.html">Split Bills</a></li>
-           <li><a href="New-Connection.html">Register Complaint</a></li>
-           <li><a href="New-Connection.html">Bill History</a></li>
-         </ul>
-       </div>
- 
-       <div class="col-xs-6 col-md-3">
-         <h6>Help & Support</h6>
-         <ul class="footer-links">
-           <li><a href="http://scanfcode.com/about/">About Us</a></li>
-           <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-           <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Customer Care Centre</a></li>
-           <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-           <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-         </ul>
-       </div>
-     </div>
-     <hr>
-   </div>
-   <div class="container"> 
-    <div class="row"> 
-     <div class="col-md-8 col-sm-6 col-xs-12"> 
-       <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
-         <a href="http://www.frcrce.ac.in/">CRCE</a>. 
-       </p> </div>
- 
-       <div class="col-md-4 col-sm-6 col-xs-12">
-         <ul class="social-icons">
-           <li><a class="instagram" href="https://instagram.com/_bastienalmeida_?igshid=Zjc2ZTc4Nzk="><i class="bi bi-instagram"></i></a></li>
-           <li><a class="twitter" href="https://twitter.com/bastienalmeida1?s=21&t=9AlZGOjr6YzAYbe6k3rkdw"><i class="bi bi-twitter"></i></a></li>
-           <li><a class="spotify" href="https://open.spotify.com/user/o7yslybrce1txf65eyzr0zdk7?si=jR0dZbrdQSWe9QerQC00Qw&fbclid=PAAaZl9-GU_RVNimMrtrkdzv3kU0qpSZzXjP2DrCL7732K3RZJD51qXdc7Fa8&nd=1&utm_medium=organic&_branch_referrer=H4sIAAAAAAAAA9WO226CMACGnwbvpkgF3BKyEB3GM2iYyo1pSyuVCqW0bvD0gyV7iCX%2F1X%2FKlykl6rfRqBalYrQZQiGGnBX56F3IMtVYeaUgxcCwJlRzftWSe1k%2FMYBvWEGnPh7%2BrXH56CxdE9knblPzBklMxuqbOjZpWmm2ae4aIKiZAeb3g5kmSKbR8UReIyKjmWlGX4blUIQ5S7tG6Psw4a8vi%2Fh6%2BNyxx1YqmaftE%2BSxWYlj0p7voTWXs43rAmsNDslqbo%2Brc4rdAE5%2FoSHnCOL8X4F3R0V%2FMh5QApWWxCvlDRYMD67Ms8%2FFBHygKReU7JfbPar0Rl92UzsJb6G7zCIWnxbY5xe%2BW0WVsxbPDAc0c8omQPFptvoBPMJcP%2FEBAAA%3D&product=open&%24full_url=https%3A%2F%2Fopen.spotify.com%2Fuser%2Fo7yslybrce1txf65eyzr0zdk7%3Fsi%3DjR0dZbrdQSWe9QerQC00Qw%26fbclid%3DPAAaZl9-GU_RVNimMrtrkdzv3kU0qpSZzXjP2DrCL7732K3RZJD51qXdc7Fa8&feature=organic&_i=5Xn43Eb8lpfeOIMObquLuYN85ZPgP7IhQiUWGcAlYlNJQq6KpvhcFfh6oyFbUWCJ&_branch_match_id=1010492094630181165"><i class="bi bi-facebook"></i></a></li>
-           <li><a class="linkedin" href="https://www.linkedin.com/in/bastien-almeida-04975a238"><i class="bi bi-linkedin"></i></a></li>   
-         </ul>
-       </div>
-     </div>
-   </div>
- </footer>
+    <footer class="site-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify About-text">By students at FRCRCE - <i>The major motivation for choosing this topic is to learn the nuances of how bill payment works and the problems related to it.</i> Our goal is Designing and implementing an online Electricity Bill Payment System and fixing the issues related to it.</p>
+          </div>
+    
+          <div class="col-xs-6 col-md-3">
+            <h6>Services</h6>
+            <ul class="footer-links">
+              <li><a href="New-Connection.html">Apply New Connection</a></li>
+              <li><a href="New-Connection.html">Pay Bills</a></li>
+              <li><a href="New-Connection.html">Submit Meter Reading</a></li>
+              <li><a href="New-Connection.html">Split Bills</a></li>
+              <li><a href="complaint.html">Register Complaint</a></li>
+              <li><a href="New-Connection.html">Bill History</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-xs-6 col-md-3">
+            <h6>Help & Support</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Customer Care Centre</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container-fluid"> 
+        <div class="row"> 
+        <div class="col-md-8 col-sm-6 col-xs-12"> 
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+            <a href="http://www.frcrce.ac.in/">CRCE</a>. 
+          </p> 
+          </div>
+    
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="instagram" href="https://instagram.com/_bastienalmeida_?igshid=Zjc2ZTc4Nzk="><i class="bi bi-instagram"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/bastienalmeida1?s=21&t=9AlZGOjr6YzAYbe6k3rkdw"><i class="bi bi-twitter"></i></a></li>
+              <li><a class="spotify" href="https://open.spotify.com/user/o7yslybrce1txf65eyzr0zdk7?si=jR0dZbrdQSWe9QerQC00Qw&fbclid=PAAaZl9-GU_RVNimMrtrkdzv3kU0qpSZzXjP2DrCL7732K3RZJD51qXdc7Fa8&nd=1&utm_medium=organic&_branch_referrer=H4sIAAAAAAAAA9WO226CMACGnwbvpkgF3BKyEB3GM2iYyo1pSyuVCqW0bvD0gyV7iCX%2F1X%2FKlykl6rfRqBalYrQZQiGGnBX56F3IMtVYeaUgxcCwJlRzftWSe1k%2FMYBvWEGnPh7%2BrXH56CxdE9knblPzBklMxuqbOjZpWmm2ae4aIKiZAeb3g5kmSKbR8UReIyKjmWlGX4blUIQ5S7tG6Psw4a8vi%2Fh6%2BNyxx1YqmaftE%2BSxWYlj0p7voTWXs43rAmsNDslqbo%2Brc4rdAE5%2FoSHnCOL8X4F3R0V%2FMh5QApWWxCvlDRYMD67Ms8%2FFBHygKReU7JfbPar0Rl92UzsJb6G7zCIWnxbY5xe%2BW0WVsxbPDAc0c8omQPFptvoBPMJcP%2FEBAAA%3D&product=open&%24full_url=https%3A%2F%2Fopen.spotify.com%2Fuser%2Fo7yslybrce1txf65eyzr0zdk7%3Fsi%3DjR0dZbrdQSWe9QerQC00Qw%26fbclid%3DPAAaZl9-GU_RVNimMrtrkdzv3kU0qpSZzXjP2DrCL7732K3RZJD51qXdc7Fa8&feature=organic&_i=5Xn43Eb8lpfeOIMObquLuYN85ZPgP7IhQiUWGcAlYlNJQq6KpvhcFfh6oyFbUWCJ&_branch_match_id=1010492094630181165"><i class="bi bi-facebook"></i></a></li>
+              <li><a class="linkedin" href="https://www.linkedin.com/in/bastien-almeida-04975a238"><i class="bi bi-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="home.js"></script>
 	</body>
 </html>
