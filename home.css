@@ -35,6 +35,7 @@ body
 #news
 {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .slide-text
@@ -99,7 +100,7 @@ body
 .site-footer hr
 {
   border-top-color:rgb(254, 252, 252);
-  opacity:0.5;
+  opacity:0.8;
 }
 .site-footer hr.small
 {
@@ -133,7 +134,8 @@ body
 }
 .footer-links a
 {
-  color:#000000
+  color:#000000;
+  text-decoration:none;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -146,7 +148,7 @@ body
 }
 .site-footer .social-icons
 {
-  text-align:right
+  text-align:right;
 }
 .site-footer .social-icons a
 {
@@ -329,7 +331,7 @@ body
   }
 
   .services .icon-box {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 5px;
     border-radius: 3px;
   }
@@ -390,7 +392,7 @@ body
   }
   .About-text
   {
-    margin: 0 5% 0 5%;
+    margin: 0 5% ;
     text-align: center;
   }
   services .icon-box {

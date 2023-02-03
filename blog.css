@@ -195,7 +195,8 @@ body{
 }
 .footer-links a
 {
-  color:#000000
+  color:#e3e3e3;
+  text-decoration: none;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -269,7 +270,7 @@ body{
   line-height:34px;
   height:34px;
   width:34px;
-  font-size:14px
+  font-size:14px;
 }
 
 .About-text
@@ -349,3 +350,4 @@ body{
   }
   
 }
+

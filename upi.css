@@ -126,10 +126,12 @@ input{
     border: 1px solid #ccc;
     padding: 10px 15px;
     text-transform: none;
+    border-radius: 5px;
 }
 
 input:focus{
-    border: 1px solid #000;
+    border: 2px solid;
+    border-color: #9b59b6;
 }
 
 .payment-btn{

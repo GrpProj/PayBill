@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,25 +14,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
-    min-height: 100vh;
+    padding: 10px;
+    min-height: 90vh;
     background: linear-gradient(135deg, #57a8df, #9b59b6);
-    padding-bottom: 70pxs;
+    padding-bottom: 80pxs;
 }
 
 .navigation{
-    padding: 10px 0 20px 0;
+    padding: 5px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-style: none none solid none;
-    border-width: 1px;
+    border-width: 1.5px;
     border-color: #bbb;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-a{
+a
+{
     text-decoration: none;
-    color: #333;
+    color: #8a36ab;
 }
 .card-link{
     font-size: 1rem;
@@ -41,13 +41,11 @@ a{
 }
 
 .upi-link{
-
     font-size: 1rem;
-    /* margin-left: 25px;         */
 }
 
 .upi-link:hover{
-    color:#8a36ab;
+    color:#57a8df;
     
 }
 
@@ -57,7 +55,7 @@ a{
 }
 
 .home-link:hover{
-    color:#8a36ab;
+    color:#57a8df;
 }
 
 .card-icon{
@@ -98,6 +96,45 @@ a{
     text-transform: uppercase;
 }
 
+input[type="text"]{
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    height: 40px;
+    width: 70px;
+
+ }
+ 
+
+
+ input[type="email"]{
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    height: 40px;
+    width: 70px;
+ }
+
+
+
+ input[type="number"]{
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    height: 40px;
+    width: 70px;
+ }
+
+
 .container form .row .col .inputbox{
     margin: 15px 0;
 }
@@ -116,7 +153,8 @@ a{
 }
 
 .container form .row .col .inputbox input:focus{
-    border: 1px solid #000;
+    border: 1.5px solid ;
+    border-color: #9b59b6;
 }
 
 .container form .row .col .flex{
@@ -130,15 +168,14 @@ a{
 }
 
 .container form .row .col .inputbox img{
-    height: 34px;
+    height: 30px;
     margin-top: 5px;
-    /* filter: drop-shadow(0 0 1px #000); */
 }
 
 .container form .submit-btn{
     width: 100%;
     padding: 12px;
-    font-size: 17px;
+    font-size: 18px;
     background: linear-gradient(135deg, #57a8df, #9b59b6);
     color: #fff;
     margin-top: 5px;
@@ -148,5 +185,9 @@ a{
 
 .container form .submit-btn:hover{
     /* background: linear-gradient(135deg, #9b59b6, #57a8df);  */
-    background: linear-gradient(135deg, #7fb9df, #b37cc9);
+    background: linear-gradient(-135deg, #7fb9df, #b37cc9);
+}
+
+select{
+    font-size: 16px;
 }
