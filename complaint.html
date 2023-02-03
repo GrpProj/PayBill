@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="complaint.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <div class="container">
+        <h1><img src="favicon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">Complaint Form</h1>
+        <p>Have any Complaints or Queries? Drop us a message</p>
+        <form action="home.html">
+            <div class="row">
+                <div class="column">
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="column">
+                    <input type="email" id="email" placeholder="Email / Phone number">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <input type="text" id="subject" placeholder="Subject">
+                </div>
+                <div class="column">
+                    <input type="text" id="contact" placeholder=" City - Pincode">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <textarea id="issue" placeholder="Describe your issue in detail here" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
