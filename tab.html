@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="tab.css">
-	<title>Vertical Tabs</title>
+    <link rel="icon" href="favicon.png">
+	<title>Energy Calculator</title>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="wrapper">
 			<ul class="indicator">
-				<li class="active" data-target="#home">Home</li>
-				<li data-target="#kitchen">Kitchen</li>
+				<li class="active" data-target="#home">Kitchen</li>
+				<li data-target="#kitchen">Lights</li>
 				<li data-target="#hc">Heating & Cooling</li>
-                <li data-target="#light">Light</li>
-                <li data-target="#pc">PC</li>
+                <li data-target="#light">Computer & Entertainment</li>
+                <li data-target="#pc">House-Hold Machines</li>
 				<li data-target="#other">Other</li>
 			</ul>
 			<ul class="content">
 				<li class="active" id="home">
-                <h1>Home</h1>
+                <h1>Kitchen</h1>
 					<div class="horizontal-group">
                         <div class="select">
                           <select name="format" id="days-home" onchange="unit()">
@@ -143,7 +144,7 @@
                     </div>
 				</li>
 				<li id="kitchen">
-                    <h1>Kitchen</h1>
+                    <h1>Lights</h1>
                     <div class="horizontal-group">
                         <div class="select">
                             <select name="format" id="days-kitchen" onchange="unitkitchen()">
@@ -263,6 +264,7 @@
                     </div>
 				</li>
 				<li id="pc">
+                    <h1>House-Hold Machines</h1>
 					<div class="horizontal-group">
                         <div class="select">
                             <select name="format" id="days-pc" onchange="unitpc()">
@@ -382,7 +384,7 @@
                     </div>
 				</li>
 				<li id="light">
-                    <h1>Light</h1>
+                    <h1>PC & Entertainment </h1>
 					<div class="horizontal-group">
                         <div class="select">
                             <select name="format" id="days-light" onchange="unitlight()">
@@ -502,6 +504,7 @@
                     </div>
 				</li>
                 <li id="hc">
+                    <h1>Heating & Cooling</h1>
 					<div class="horizontal-group">
                         <div class="select">
                             <select name="format" id="days-hc" onchange="unithc()">
@@ -621,6 +624,7 @@
                     </div>
 				</li>
                 <li id="other">
+                    <h1>Other</h1>
                     <div class="horizontal-group">
                         <div class="select">
                             <select name="format" id="days-other" onchange="unitother()">

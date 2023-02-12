@@ -102,7 +102,7 @@ select[id^='days']
      overflow: hidden;
      border-radius: .30em;
      margin: 10px;
-     margin-left: 30%;
+     margin-left: 43%;
   }
   .select::after {
      content: '\25BC';
@@ -147,6 +147,9 @@ input[id^='total']
   border: solid .2px rgb(201, 199, 199);
   border-radius: 5px;
   padding-left: 20px;
+}
+h1{
+  text-align: center;
 }
 
 @media screen and (max-width: 576px) {

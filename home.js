@@ -30,9 +30,24 @@ for(let i=0; i<toggles.length; i++){
 }
 
 
-fetch('https://api.geoapify.com/v1/ipinfo?apiKey=23fc6c7f86e1471aae6ba27c8d960977')
-.then(resp => resp.json())
-.then((userLocationData) => {
-  //console.log(userLocationData);
-  alert("Thank You for joining us from "+ userLocationData.city.name)
-})
+
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+  
+      // Use the latitude and longitude to get the street name
+      var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyALVfQMevuvqotuQ3CV4cfI1ZCVjgaJHHc`;
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          var street = data.results[0].address_components.find(function(component) {
+            return component.types.includes("route");
+          });
+          alert("Your current street: " + street.long_name);
+        });
+    });
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+  
