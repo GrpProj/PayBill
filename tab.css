@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 li {
 	list-style: none;
@@ -20,6 +20,7 @@ body {
 	align-items: center;
 	min-height: 100vh;
   background: linear-gradient(120deg,#2980b9, #8e44ad);
+  font-family: "Ubuntu";
 }
 
 .container-fluid {
