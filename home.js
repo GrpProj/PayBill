@@ -30,6 +30,7 @@ for(let i=0; i<toggles.length; i++){
 }
 
 
+/*
 
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -50,4 +51,28 @@ if (navigator.geolocation) {
   } else {
     alert("Geolocation is not supported by this browser.");
   }
-  
+  */
+/*
+  // set endpoint and your access key
+var ip = '134.201.250.155'
+var access_key = '97f8d1db4dfd8f4d9c786d05d39952c7';
+
+// get the API result via jQuery.ajax
+$.ajax({
+    url: 'http://api.ipstack.com/' + ip + '?access_key=' + access_key,
+    dataType: 'jsonp',
+    success: function(json) {
+
+        // output the "capital" object inside "location"
+        alert(json.location.city);
+        console.log(json.location.continent);
+
+    }
+});
+*/
+fetch('https://api.geoapify.com/v1/ipinfo?apiKey=23fc6c7f86e1471aae6ba27c8d960977')
+.then(resp => resp.json())
+.then((userLocationData) => {
+	console.log(userLocationData.city.name);
+  alert(`Thank you for joining us from  ${userLocationData.city.name}`)
+});
