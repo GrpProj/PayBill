@@ -73,6 +73,9 @@ body {
 	color: var(--black);
 	margin-bottom: .5rem;
 }
+.cal-icons{
+  margin-right: 15px;
+}
 
 
 select[id^='days'] 
