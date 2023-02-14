@@ -24,7 +24,7 @@ body {
 }
 
 .container-fluid {
-	width: 90%;
+	width: 95%;
   height: 65%;
 	background: var(--white);
 	border-radius: 10px;
