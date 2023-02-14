@@ -10,22 +10,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="tab.css">
     <link rel="icon" href="favicon.png">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/e95a5f72ef.js" crossorigin="anonymous"></script>
 	<title>Energy Calculator</title>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="wrapper">
 			<ul class="indicator">
-				<li class="active" data-target="#home">Kitchen</li>
-				<li data-target="#kitchen">Lights</li>
-				<li data-target="#hc">Heating & Cooling</li>
-                <li data-target="#light">Computer & Entertainment</li>
-                <li data-target="#pc">House-Hold Machines</li>
-				<li data-target="#other">Other</li>
+				<li class="active" data-target="#home"><i class="fa-solid fa-kitchen-set cal-icons"></i>  Kitchen</li>
+				<li data-target="#kitchen"><i class="fa-solid fa-lightbulb cal-icons"></i>   Lights</li>
+				<li data-target="#hc"><i class="fa-solid fa-temperature-low cal-icons"></i>  Heating & Cooling</li>
+                <li data-target="#light"><i class="fa-solid fa-desktop cal-icons"></i>  Computer & Entertainment</li>
+                <li data-target="#pc"><i class="fa-solid fa-house-laptop cal-icons"></i>  House-Hold Machines</li>
+				<li data-target="#other"><i class="fa-solid fa-plug cal-icons"></i> Other</li>
 			</ul>
 			<ul class="content">
 				<li class="active" id="home">
-                <h1>Kitchen</h1>
+                    <h1>Kitchen</h1>
 					<div class="horizontal-group">
                         <div class="select">
                           <select name="format" id="days-home" onchange="unit()">
