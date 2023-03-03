@@ -75,7 +75,7 @@ fetch('https://api.geoapify.com/v1/ipinfo?apiKey=23fc6c7f86e1471aae6ba27c8d96097
 .then((userLocationData) => {
 	console.log(userLocationData.city.name);
   alert(`Thank you for joining us from  ${userLocationData.city.name}`)
-});
+}, []);
 
   var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
