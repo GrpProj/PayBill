@@ -12,7 +12,8 @@ body{
   height: 100vh;
   overflow: hidden;
 }
-.center{
+.container
+{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,7 +23,7 @@ body{
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
 }
-.center h1{
+.container h1{
   text-align: center;
   /*border-bottom: 1px solid silver;*/
   font-size: 30px;
@@ -30,7 +31,7 @@ body{
   position: relative;
   font-family: "Ubuntu";
 }
-.center form{
+.container form{
   padding: 0 40px;
   box-sizing: border-box;
 }
@@ -162,4 +163,19 @@ img
   margin-top: 15px;
   clear: left;
   display: inline-block;
+}
+
+@media (max-width:991px)
+{
+  .container
+  {
+    width: 90%;
+  }
+}
+@media (max-width:767px)
+{ 
+  .container
+  {
+    width: 90%;
+  }
 }
