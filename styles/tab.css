@@ -1,0 +1,229 @@
+
+
+li {
+	list-style: none;
+}
+
+:root {
+	--white: #FFF;
+	--blue: #2980b9;
+	--light: #F5F5F5;
+	--light-blue: #F3F0FF;
+	--grey: #eee;
+	--dark-grey: #666;
+	--black: #222;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+  background: linear-gradient(120deg,#2980b9, #8e44ad);
+  font-family: "Ubuntu";
+}
+
+.container-fluid {
+	width: 95%;
+  height: 65%;
+	background: var(--white);
+	border-radius: 10px;
+  margin: 2px 5px;
+}
+.wrapper {
+	display: flex;
+}
+.indicator {
+	padding: 1.5rem 0;
+	border-right: 1px solid var(--grey);
+}
+.indicator li {
+	display: flex;
+	align-items: center;
+	grid-gap: .2rem;
+	padding: 10px 1rem;
+	cursor: pointer;
+	font-size: .875rem;
+	color: var(--black);
+	border-right: 2px solid transparent;
+}
+.indicator li i {
+	font-size: 1rem;
+}
+.indicator li:hover {
+	background: var(--light-blue);
+}
+.indicator li.active {
+	border-right-color: var(--blue);
+	color: var(--blue);
+	background: var(--light-blue);
+}
+.content {
+	padding: .2rem .8rem;
+  width: 100%;
+}
+.content li {
+	display: none;
+}
+.content li.active {
+	display: block;
+}
+.content li h1 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--black);
+	margin-bottom: .5rem;
+}
+.cal-icons{
+  margin-right: 15px;
+}
+
+
+select[id^='days'] 
+  {
+    border-color: #8e44ad;
+    background: #fff;
+    background-image: none;
+    flex: 1;
+    padding: 0.3em;
+    color:#000101;
+    cursor:pointer;
+    font-size: 1em;
+    margin-left: 5px;
+  }
+  
+  select::-ms-expand {
+     display: none;
+  }
+  .select 
+  {
+     position: relative;
+     display: flex;
+     width: 15%;
+     height: 2em;
+     line-height: 2;
+     background: #fff;
+     overflow: hidden;
+     border-radius: .30em;
+     margin: 10px;
+     margin-left: 43%;
+  }
+  .select::after {
+     content: '\25BC';
+     position: absolute;
+     top: 0;
+     right: 0;
+     padding: 0 0.5em;
+     background: #9b59b6;
+     cursor:pointer;
+     pointer-events:none;
+     transition:.25s all ease;
+  }
+  
+  .select:hover::after {
+     color: #2980b9;
+  }
+
+input{
+  width: 45px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #d2d2d2;
+  outline: none;
+  margin: 5px;
+  padding: 0 10px;
+}
+input:focus,
+input:hover{
+  border-color: #8e44ad;
+}
+
+input[id^='total']
+{
+  padding: 0 15px;
+  width: 60px;
+}
+
+.container{
+  width: 95%;
+  height: 30%;
+  margin: 5px 10px 5px 0;
+  border: solid .2px rgb(201, 199, 199);
+  border-radius: 5px;
+  padding-left: 20px;
+}
+h1{
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+	.wrapper {
+		flex-direction: column;
+	}
+	.indicator li {
+		border-right: none;
+    text-align: center;
+	}
+
+  .container-fluid{
+    margin: 1px;
+    width: 100%;
+    height: 80%;
+  }
+
+  .container{
+    overflow-wrap: break-word;
+    height: 60%;
+    width: 100%;
+    padding: 2px;
+    margin: 5px 2px;  
+  }
+
+  select[id^='days'] 
+  {
+    padding: 0.2em;
+  }
+
+  .select{
+    width: 45%;
+    margin-left: 25%
+  }
+  input{
+    width: 35px;
+    height: 25px;
+    margin: 2px 1px;
+    padding: 0 2px;
+    font-size: 0.8rem;
+  }
+  input[id^='total']
+  {
+    padding: 0 3px;
+    width: 50px;
+  }
+
+  .indicator {
+    padding: 3px 0;
+  }
+  .indicator li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    grid-gap: .1rem;
+    padding: 5px 5rem;
+    
+  }
+  .indicator li i {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .content{
+    width: 95%;;
+    height: 100%;
+    padding: .2rem .3rem;
+    margin: 0;
+  }
+  h1{
+    text-align: center;
+  }
+  
+}
