@@ -667,3 +667,15 @@ function unitother() {
   $('#total-other').val(Total);
 }
 
+function Bill(){
+  o = Number($('#total-other').val());
+  console.log(o);
+  ce = Number($('#total-pc').val());
+  k = Number($('#total-kitchen').val());
+  hc = Number($('#total-hc').val());
+  hm = Number($('#total').val());
+  l = Number($('#total-light').val());
+   total = (parseFloat(o) + parseFloat(ce) + parseFloat(k) +  parseFloat(hc) +  parseFloat(hm) + parseFloat(l));
+  $('#total-bill').val(total);
+}
+
